@@ -1,18 +1,19 @@
 {
-  "version": "1.2.0-beta.19",
+  "version": "1.2.0-beta.25",
   "name": "@tmagic/editor",
+  "type": "module",
   "sideEffects": [
     "dist/*",
     "src/theme/*"
   ],
-  "main": "dist/tmagic-editor.umd.js",
-  "module": "dist/tmagic-editor.mjs",
+  "main": "dist/tmagic-editor.umd.cjs",
+  "module": "dist/tmagic-editor.js",
   "style": "dist/style.css",
   "types": "types/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/tmagic-editor.mjs",
-      "require": "./dist/tmagic-editor.umd.js"
+      "import": "./dist/tmagic-editor.js",
+      "require": "./dist/tmagic-editor.umd.cjs"
     },
     "./dist/style.css": {
       "import": "./dist/style.css",
@@ -45,12 +46,12 @@
   "dependencies": {
     "@babel/core": "^7.18.0",
     "@element-plus/icons-vue": "^2.0.9",
-    "@tmagic/core": "1.2.0-beta.19",
-    "@tmagic/design": "1.2.0-beta.19",
-    "@tmagic/form": "1.2.0-beta.19",
-    "@tmagic/schema": "1.2.0-beta.19",
-    "@tmagic/stage": "1.2.0-beta.19",
-    "@tmagic/utils": "1.2.0-beta.19",
+    "@tmagic/core": "1.2.0-beta.25",
+    "@tmagic/design": "1.2.0-beta.25",
+    "@tmagic/form": "1.2.0-beta.25",
+    "@tmagic/schema": "1.2.0-beta.25",
+    "@tmagic/stage": "1.2.0-beta.25",
+    "@tmagic/utils": "1.2.0-beta.25",
     "buffer": "^6.0.3",
     "color": "^3.1.3",
     "events": "^3.3.0",
@@ -62,8 +63,8 @@
     "vue": "^3.2.37"
   },
   "peerDependencies": {
-    "@tmagic/design": "1.2.0-beta.19",
-    "@tmagic/form": "1.2.0-beta.19",
+    "@tmagic/design": "1.2.0-beta.25",
+    "@tmagic/form": "1.2.0-beta.25",
     "monaco-editor": "^0.34.0",
     "vue": "^3.2.37"
   },

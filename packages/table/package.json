@@ -1,16 +1,17 @@
 {
-  "version": "1.2.0-beta.19",
+  "version": "1.2.0-beta.25",
   "name": "@tmagic/table",
+  "type": "module",
   "sideEffects": [
     "dist/*"
   ],
-  "main": "dist/tmagic-table.umd.js",
-  "module": "dist/tmagic-table.mjs",
+  "main": "dist/tmagic-table.umd.cjs",
+  "module": "dist/tmagic-table.js",
   "types": "types/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/tmagic-table.mjs",
-      "require": "./dist/tmagic-table.umd.js"
+      "import": "./dist/tmagic-table.js",
+      "require": "./dist/tmagic-table.umd.cjs"
     },
     "./dist/style.css": {
       "import": "./dist/style.css",
@@ -32,14 +33,14 @@
     "url": "https://github.com/Tencent/tmagic-editor.git"
   },
   "dependencies": {
-    "@tmagic/design": "1.2.0-beta.19",
-    "@tmagic/form": "1.2.0-beta.19",
-    "@tmagic/utils": "1.2.0-beta.19",
+    "@tmagic/design": "1.2.0-beta.25",
+    "@tmagic/form": "1.2.0-beta.25",
+    "@tmagic/utils": "1.2.0-beta.25",
     "lodash-es": "^4.17.21",
     "vue": "^3.2.37"
   },
   "peerDependencies": {
-    "@tmagic/form": "1.2.0-beta.19",
+    "@tmagic/form": "1.2.0-beta.25",
     "vue": "^3.2.37"
   },
   "devDependencies": {

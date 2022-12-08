@@ -95,6 +95,7 @@ class Editor extends BaseService {
    * @param value MNode
    */
   public set<T = MNode>(name: keyof StoreState, value: T) {
+    const preValue = this.state[name];
     this.state[name] = value as any;
     // set nodes时将node设置为nodes第一个元素
     if (name === 'nodes') {
@@ -102,7 +103,7 @@ class Editor extends BaseService {
     }
     if (name === 'root') {
       this.state.pageLength = (value as unknown as MApp)?.items?.length || 0;
-      this.emit('root-change', value);
+      this.emit('root-change', value, preValue);
     }
   }
 
@@ -207,7 +208,7 @@ class Editor extends BaseService {
     if (page) {
       historyService.changePage(toRaw(page));
     } else {
-      historyService.empty();
+      historyService.resetState();
     }
 
     if (node?.id) {
@@ -352,6 +353,9 @@ class Editor extends BaseService {
 
     const newNodes = await Promise.all(
       addNodes.map((node) => {
+        if (isPage(node)) {
+          return this.doAdd(node, this.get('root'));
+        }
         const parentNode = parent && typeof parent !== 'function' ? parent : getAddParent(node);
         if (!parentNode) throw new Error('未找到父元素');
         return this.doAdd(node, parentNode);
@@ -577,9 +581,20 @@ class Editor extends BaseService {
 
     if (!Array.isArray(config)) return;
 
+    const node = this.get<MNode>('node');
+
+    let parent: MContainer | undefined = undefined;
+    // 粘贴的组件为当前选中组件的副本时，则添加到当前选中组件的父组件中
+    if (config.length === 1 && config[0].id === node.id) {
+      parent = this.get<MContainer>('parent');
+      if (parent.type === NodeType.ROOT) {
+        parent = this.get<MPage>('page');
+      }
+    }
+
     const pasteConfigs = await this.doPaste(config, position);
 
-    return this.add(pasteConfigs);
+    return this.add(pasteConfigs, parent);
   }
 
   public async doPaste(config: MNode[], position: PastePosition = {}): Promise<MNode[]> {
@@ -759,8 +774,7 @@ class Editor extends BaseService {
     });
   }
 
-  public destroy() {
-    this.removeAllListeners();
+  public resetState() {
     this.set('root', null);
     this.set('node', null);
     this.set('nodes', []);
@@ -770,6 +784,12 @@ class Editor extends BaseService {
     this.set('highlightNode', null);
     this.set('modifiedNodeIds', new Map());
     this.set('pageLength', new Map());
+  }
+
+  public destroy() {
+    this.removeAllListeners();
+    this.resetState();
+    this.removeAllPlugins();
   }
 
   public resetModifiedNodeId() {

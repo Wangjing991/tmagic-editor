@@ -107,7 +107,7 @@ importers:
 
   packages/core:
     specifiers:
-      '@tmagic/schema': 1.2.0-beta.19
+      '@tmagic/schema': 1.2.0-beta.25
       '@types/events': ^3.0.0
       '@types/lodash-es': ^4.17.4
       '@types/node': ^15.12.4
@@ -157,12 +157,12 @@ importers:
     specifiers:
       '@babel/core': ^7.18.0
       '@element-plus/icons-vue': ^2.0.9
-      '@tmagic/core': 1.2.0-beta.19
-      '@tmagic/design': 1.2.0-beta.19
-      '@tmagic/form': 1.2.0-beta.19
-      '@tmagic/schema': 1.2.0-beta.19
-      '@tmagic/stage': 1.2.0-beta.19
-      '@tmagic/utils': 1.2.0-beta.19
+      '@tmagic/core': 1.2.0-beta.25
+      '@tmagic/design': 1.2.0-beta.25
+      '@tmagic/form': 1.2.0-beta.25
+      '@tmagic/schema': 1.2.0-beta.25
+      '@tmagic/stage': 1.2.0-beta.25
+      '@tmagic/utils': 1.2.0-beta.25
       '@types/events': ^3.0.0
       '@types/lodash-es': ^4.17.4
       '@types/node': ^15.12.4
@@ -239,8 +239,8 @@ importers:
     specifiers:
       '@babel/core': ^7.18.0
       '@element-plus/icons-vue': ^2.0.9
-      '@tmagic/design': 1.2.0-beta.19
-      '@tmagic/utils': 1.2.0-beta.19
+      '@tmagic/design': 1.2.0-beta.25
+      '@tmagic/utils': 1.2.0-beta.25
       '@types/lodash-es': ^4.17.4
       '@types/node': ^15.12.4
       '@types/sortablejs': ^1.10.7
@@ -293,9 +293,9 @@ importers:
   packages/stage:
     specifiers:
       '@scena/guides': ^0.17.0
-      '@tmagic/core': 1.2.0-beta.19
-      '@tmagic/schema': 1.2.0-beta.19
-      '@tmagic/utils': 1.2.0-beta.19
+      '@tmagic/core': 1.2.0-beta.25
+      '@tmagic/schema': 1.2.0-beta.25
+      '@tmagic/utils': 1.2.0-beta.25
       '@types/events': ^3.0.0
       '@types/lodash-es': ^4.17.4
       '@types/node': ^15.12.4
@@ -329,9 +329,9 @@ importers:
 
   packages/table:
     specifiers:
-      '@tmagic/design': 1.2.0-beta.19
-      '@tmagic/form': 1.2.0-beta.19
-      '@tmagic/utils': 1.2.0-beta.19
+      '@tmagic/design': 1.2.0-beta.25
+      '@tmagic/form': 1.2.0-beta.25
+      '@tmagic/utils': 1.2.0-beta.25
       '@types/color': ^3.0.1
       '@types/lodash-es': ^4.17.4
       '@types/node': ^15.12.4
@@ -369,16 +369,15 @@ importers:
   packages/ui:
     specifiers:
       '@testing-library/vue': ^6.4.2
-      '@tmagic/core': 1.2.0-beta.19
-      '@tmagic/schema': 1.2.0-beta.19
-      '@tmagic/utils': 1.2.0-beta.19
+      '@tmagic/core': 1.2.0-beta.25
+      '@tmagic/schema': 1.2.0-beta.25
+      '@tmagic/utils': 1.2.0-beta.25
       '@types/qrcode': ^1.4.2
       '@vue/compiler-sfc': ^3.2.37
       '@vue/test-utils': ^2.0.0
       delegate: ^3.2.0
       qrcode: ^1.5.0
       tiny-emitter: ^2.1.0
-      vant: ^4.0.2
       vue: ^3.2.37
     dependencies:
       '@tmagic/core': link:../core
@@ -387,7 +386,6 @@ importers:
       delegate: 3.2.0
       qrcode: 1.5.0
       tiny-emitter: 2.1.0
-      vant: 4.0.2_vue@3.2.37
       vue: 3.2.37
     devDependencies:
       '@testing-library/vue': 6.5.1_2yymnzrok6eda47acnj2yjm3ae
@@ -397,8 +395,8 @@ importers:
 
   packages/ui-react:
     specifiers:
-      '@tmagic/core': 1.2.0-beta.19
-      '@tmagic/schema': 1.2.0-beta.19
+      '@tmagic/core': 1.2.0-beta.25
+      '@tmagic/schema': 1.2.0-beta.25
       '@types/react': ^17.0.37
       '@types/react-dom': ^17.0.11
       qrcode: ^1.5.0
@@ -418,9 +416,9 @@ importers:
 
   packages/ui-vue2:
     specifiers:
-      '@tmagic/core': 1.2.0-beta.19
-      '@tmagic/schema': 1.2.0-beta.19
-      '@tmagic/utils': 1.2.0-beta.19
+      '@tmagic/core': 1.2.0-beta.25
+      '@tmagic/schema': 1.2.0-beta.25
+      '@tmagic/utils': 1.2.0-beta.25
       qrcode: ^1.5.0
       vite: ^3.1.3
       vue: ^2.7.4
@@ -437,7 +435,7 @@ importers:
 
   packages/utils:
     specifiers:
-      '@tmagic/schema': 1.2.0-beta.19
+      '@tmagic/schema': 1.2.0-beta.25
       '@types/node': ^15.12.4
       dayjs: ^1.11.4
       rimraf: ^3.0.2
@@ -455,13 +453,13 @@ importers:
   playground:
     specifiers:
       '@element-plus/icons-vue': ^2.0.9
-      '@tmagic/design': 1.2.0-beta.19
-      '@tmagic/editor': 1.2.0-beta.19
-      '@tmagic/element-plus-adapter': 1.2.0-beta.19
-      '@tmagic/form': 1.2.0-beta.19
-      '@tmagic/schema': 1.2.0-beta.19
-      '@tmagic/stage': 1.2.0-beta.19
-      '@tmagic/utils': 1.2.0-beta.19
+      '@tmagic/design': 1.2.0-beta.25
+      '@tmagic/editor': 1.2.0-beta.25
+      '@tmagic/element-plus-adapter': 1.2.0-beta.25
+      '@tmagic/form': 1.2.0-beta.25
+      '@tmagic/schema': 1.2.0-beta.25
+      '@tmagic/stage': 1.2.0-beta.25
+      '@tmagic/utils': 1.2.0-beta.25
       '@types/node': ^15.12.4
       '@types/serialize-javascript': ^5.0.1
       '@vitejs/plugin-legacy': ^2.2.0
@@ -507,12 +505,12 @@ importers:
 
   runtime/react:
     specifiers:
-      '@tmagic/cli': 1.2.0-beta.19
-      '@tmagic/core': 1.2.0-beta.19
-      '@tmagic/schema': 1.2.0-beta.19
-      '@tmagic/stage': 1.2.0-beta.19
-      '@tmagic/ui-react': 1.2.0-beta.19
-      '@tmagic/utils': 1.2.0-beta.19
+      '@tmagic/cli': 1.2.0-beta.25
+      '@tmagic/core': 1.2.0-beta.25
+      '@tmagic/schema': 1.2.0-beta.25
+      '@tmagic/stage': 1.2.0-beta.25
+      '@tmagic/ui-react': 1.2.0-beta.25
+      '@tmagic/utils': 1.2.0-beta.25
       '@types/react': ^17.0.37
       '@types/react-dom': ^17.0.11
       '@vitejs/plugin-legacy': ^2.2.0
@@ -546,12 +544,12 @@ importers:
 
   runtime/vue2:
     specifiers:
-      '@tmagic/cli': 1.2.0-beta.19
-      '@tmagic/core': 1.2.0-beta.19
-      '@tmagic/schema': 1.2.0-beta.19
-      '@tmagic/stage': 1.2.0-beta.19
-      '@tmagic/ui-vue2': 1.2.0-beta.19
-      '@tmagic/utils': 1.2.0-beta.19
+      '@tmagic/cli': 1.2.0-beta.25
+      '@tmagic/core': 1.2.0-beta.25
+      '@tmagic/schema': 1.2.0-beta.25
+      '@tmagic/stage': 1.2.0-beta.25
+      '@tmagic/ui-vue2': 1.2.0-beta.25
+      '@tmagic/utils': 1.2.0-beta.25
       '@types/events': ^3.0.0
       '@vitejs/plugin-legacy': ^2.2.0
       '@vitejs/plugin-vue2': ^1.1.2
@@ -587,12 +585,12 @@ importers:
 
   runtime/vue3:
     specifiers:
-      '@tmagic/cli': 1.2.0-beta.19
-      '@tmagic/core': 1.2.0-beta.19
-      '@tmagic/schema': 1.2.0-beta.19
-      '@tmagic/stage': 1.2.0-beta.19
-      '@tmagic/ui': 1.2.0-beta.19
-      '@tmagic/utils': 1.2.0-beta.19
+      '@tmagic/cli': 1.2.0-beta.25
+      '@tmagic/core': 1.2.0-beta.25
+      '@tmagic/schema': 1.2.0-beta.25
+      '@tmagic/stage': 1.2.0-beta.25
+      '@tmagic/ui': 1.2.0-beta.25
+      '@tmagic/utils': 1.2.0-beta.25
       '@types/node': ^15.12.4
       '@vitejs/plugin-legacy': ^2.2.0
       '@vitejs/plugin-vue': ^3.1.0
@@ -1853,14 +1851,6 @@ packages:
       '@typescript-eslint/types': 4.33.0
       eslint-visitor-keys: 2.1.0
     dev: true
-
-  /@vant/popperjs/1.3.0:
-    resolution: {integrity: sha512-hB+czUG+aHtjhaEmCJDuXOep0YTZjdlRR+4MSmIFnkCQIxJaXLQdSsR90XWvAI2yvKUI7TCGqR8pQg2RtvkMHw==}
-    dev: false
-
-  /@vant/use/1.4.3:
-    resolution: {integrity: sha512-rSnETN7P9qT1WbItMpQxBqe3cHeK2ZFYp1sCxWUXaTeI71TqA8sOdzC36ledZ36NQgFNTch9fsRPYOkrCgZfQA==}
-    dev: false
 
   /@vitejs/plugin-legacy/2.2.0_terser@5.14.2+vite@3.1.3:
     resolution: {integrity: sha512-xkSXZl2LNk0KKyo5CJknNW84mSlmHIClFzsBuFXkX3yBt+Lr8UO/n4QOg2X7+jvurgBRies9FRn3ZvMem+TmIg==}
@@ -7138,16 +7128,6 @@ packages:
       spdx-correct: 3.1.1
       spdx-expression-parse: 3.0.1
     dev: true
-
-  /vant/4.0.2_vue@3.2.37:
-    resolution: {integrity: sha512-qv3YaysqDbDI4N1peuck0v2g/Zz2rH2ao2qLNn166ZsuPadCmwsuwaypT+eFWElAzj0P1f9aUEmFmdJJwGuRfw==}
-    peerDependencies:
-      vue: ^3.0.0
-    dependencies:
-      '@vant/popperjs': 1.3.0
-      '@vant/use': 1.4.3
-      vue: 3.2.37
-    dev: false
 
   /vite-plugin-vue-setup-extend/0.4.0_vite@3.1.3:
     resolution: {integrity: sha512-WMbjPCui75fboFoUTHhdbXzu4Y/bJMv5N9QT9a7do3wNMNHHqrk+Tn2jrSJU0LS5fGl/EG+FEDBYVUeWIkDqXQ==}

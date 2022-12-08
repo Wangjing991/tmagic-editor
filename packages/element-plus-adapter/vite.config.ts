@@ -15,10 +15,28 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import { defineConfig } from 'vite';
 
-export * from './config';
-export * from './props';
-export * from './logger';
-export * from './editor';
-export * from './stage';
-export * from './operator';
+import pkg from './package.json';
+
+export default defineConfig({
+  build: {
+    cssCodeSplit: false,
+    sourcemap: true,
+    minify: false,
+    target: 'esnext',
+
+    lib: {
+      entry: 'src/index.ts',
+      name: 'TMagicElementPlusAdapter',
+      fileName: 'tmagic-element-plus-adapter',
+    },
+
+    rollupOptions: {
+      // 确保外部化处理那些你不想打包进库的依赖
+      external(id: string) {
+        return Object.keys(pkg.dependencies).some((k) => new RegExp(`^${k}`).test(id));
+      },
+    },
+  },
+});

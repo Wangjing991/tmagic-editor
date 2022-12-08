@@ -11,35 +11,38 @@ module.exports = {
     beforeEach: true,
   },
   extends: [
-    "eslint-config-tencent",
-    "eslint-config-tencent/ts",
-    "plugin:vue/vue3-essential",
-    "eslint-config-tencent/prettier",
+    'eslint-config-tencent',
+    'eslint-config-tencent/ts',
+    'plugin:vue/vue3-essential',
+    'eslint-config-tencent/prettier',
   ],
-  parser: "vue-eslint-parser",
+  parser: 'vue-eslint-parser',
   parserOptions: {
     ecmaVersion: 12,
-    parser: "@typescript-eslint/parser",
-    extraFileExtensions: [".vue"],
-    sourceType: "module",
+    parser: '@typescript-eslint/parser',
+    extraFileExtensions: ['.vue'],
+    sourceType: 'module',
   },
-  plugins: ["vue", "@typescript-eslint", "simple-import-sort"],
-  ignorePatterns: [".eslintrc.js"],
+  plugins: [
+    'vue',
+    '@typescript-eslint',
+    'simple-import-sort'
+  ],
+  ignorePatterns: ['.eslintrc.js'],
   rules: {
-    "vue/no-mutating-props": "off",
-    "no-param-reassign": "off",
-    "@typescript-eslint/no-require-imports": "off",
+    'vue/no-mutating-props': 'off',
+    'no-param-reassign': 'off',
+    '@typescript-eslint/no-require-imports': 'off',
     "@typescript-eslint/no-misused-promises": [
       "error",
       {
-        checksVoidReturn: false,
-      },
+        "checksVoidReturn": false
+      }
     ],
-    "simple-import-sort/imports": [
-      "error",
-      {
+    'simple-import-sort/imports': [
+      "error", {
         groups: [
-          ["./polyfills"],
+          ['./polyfills'],
           // Node.js builtins. You could also generate this regex if you use a `.js` config.
           // For example: `^(${require("module").builtinModules.join("|")})(/|$)`
           [
@@ -59,7 +62,7 @@ module.exports = {
           // Style imports.
           ["^.+\\.s?css$"],
         ],
-      },
-    ],
+      }
+    ]
   },
 };

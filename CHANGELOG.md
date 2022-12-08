@@ -1,3 +1,66 @@
+# [1.2.0-beta.25](https://github.com/Tencent/tmagic-editor/compare/v1.2.0-beta.24...v1.2.0-beta.25) (2022-12-07)
+
+
+### Bug Fixes
+
+* **cli:** 异步组件返回应该是个函数 ([138614a](https://github.com/Tencent/tmagic-editor/commit/138614a57adaf11b46b86f95c70df00975903c7b))
+* **cli:** 插件不支持ts的问题 ([ccb4e67](https://github.com/Tencent/tmagic-editor/commit/ccb4e675ab8e33cafb5374f9db4c602c380ccc31))
+* **playground:** 加载组件表单配置资源失败 ([ba20eb8](https://github.com/Tencent/tmagic-editor/commit/ba20eb8cf1aebc735d75c6fb2f3023f0c61b8360))
+
+
+
+# [1.2.0-beta.24](https://github.com/Tencent/tmagic-editor/compare/v1.2.0-beta.23...v1.2.0-beta.24) (2022-12-07)
+
+
+### Bug Fixes
+
+* **form:** disable配置失效 ([12d56ae](https://github.com/Tencent/tmagic-editor/commit/12d56aeda9197dfc31bf5b7e8fe480deca4a85f1))
+
+
+
+# [1.2.0-beta.23](https://github.com/Tencent/tmagic-editor/compare/v1.2.0-beta.22...v1.2.0-beta.23) (2022-12-07)
+
+
+### Bug Fixes
+
+* **editor:** modelValue自动更新不成功 ([e813129](https://github.com/Tencent/tmagic-editor/commit/e813129eb8ea6e11e683c081847dd17fb1104dfd))
+
+
+### Features
+
+* **form:** 完善select remote功能 ([7445d24](https://github.com/Tencent/tmagic-editor/commit/7445d2453194258256c70d4936aa43d04dfecdb2))
+
+
+
+# [1.2.0-beta.22](https://github.com/Tencent/tmagic-editor/compare/v1.2.0-beta.21...v1.2.0-beta.22) (2022-12-06)
+
+
+
+# [1.2.0-beta.21](https://github.com/Tencent/tmagic-editor/compare/v1.2.0-beta.20...v1.2.0-beta.21) (2022-12-06)
+
+
+### Bug Fixes
+
+* **editor:** layout 组件中hasRight判断出错 ([f6dca97](https://github.com/Tencent/tmagic-editor/commit/f6dca97442339f1cc941ebaf39eddbe657f76512))
+* **editor:** services在组件unmounted时只重置状态不移除事件 ([45a20d9](https://github.com/Tencent/tmagic-editor/commit/45a20d9405900c62dfc1c3b82612c69c409da373))
+
+
+### Features
+
+* **editor:** 新增可以移除所有service插件的方法 ([67c7faf](https://github.com/Tencent/tmagic-editor/commit/67c7faf832c811866f6c012a7362472397fdc6ef))
+
+
+
+# [1.2.0-beta.20](https://github.com/Tencent/tmagic-editor/compare/v1.2.0-beta.19...v1.2.0-beta.20) (2022-12-05)
+
+
+### Bug Fixes
+
+* **editor:** 复制粘贴时添加的到的父组件应当是当前父组件 ([828681e](https://github.com/Tencent/tmagic-editor/commit/828681e9608629414811d49da7ba3a3100e82ccd)), closes [#448](https://github.com/Tencent/tmagic-editor/issues/448)
+* **editor:** 编辑器初始化默认选择节点 ([45eaea6](https://github.com/Tencent/tmagic-editor/commit/45eaea6f686d81d04c92bbed42a3a0092b7228d8))
+
+
+
 # [1.2.0-beta.19](https://github.com/Tencent/tmagic-editor/compare/v1.2.0-beta.18...v1.2.0-beta.19) (2022-12-01)
 
 

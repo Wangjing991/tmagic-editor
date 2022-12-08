@@ -1,18 +1,19 @@
 {
-  "version": "1.2.0-beta.19",
+  "version": "1.2.0-beta.25",
   "name": "@tmagic/form",
+  "type": "module",
   "sideEffects": [
     "dist/*",
     "src/theme/*"
   ],
-  "main": "dist/tmagic-form.umd.js",
-  "module": "dist/tmagic-form.mjs",
+  "main": "dist/tmagic-form.umd.cjs",
+  "module": "dist/tmagic-form.js",
   "style": "dist/style.css",
   "types": "types/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/tmagic-form.mjs",
-      "require": "./dist/tmagic-form.umd.js"
+      "import": "./dist/tmagic-form.js",
+      "require": "./dist/tmagic-form.umd.cjs"
     },
     "./dist/style.css": {
       "import": "./dist/style.css",
@@ -35,8 +36,8 @@
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.0.9",
-    "@tmagic/design": "1.2.0-beta.19",
-    "@tmagic/utils": "1.2.0-beta.19",
+    "@tmagic/design": "1.2.0-beta.25",
+    "@tmagic/utils": "1.2.0-beta.25",
     "lodash-es": "^4.17.21",
     "sortablejs": "^1.14.0",
     "vue": "^3.2.37"

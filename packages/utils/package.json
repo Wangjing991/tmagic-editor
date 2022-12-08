@@ -1,13 +1,14 @@
 {
-  "version": "1.2.0-beta.19",
+  "version": "1.2.0-beta.25",
   "name": "@tmagic/utils",
-  "main": "dist/tmagic-utils.umd.js",
-  "module": "dist/tmagic-utils.mjs",
+  "type": "module",
+  "main": "dist/tmagic-utils.umd.cjs",
+  "module": "dist/tmagic-utils.js",
   "types": "types/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/tmagic-utils.mjs",
-      "require": "./dist/tmagic-utils.umd.js"
+      "import": "./dist/tmagic-utils.js",
+      "require": "./dist/tmagic-utils.umd.cjs"
     }
   },
   "license": "Apache-2.0",
@@ -24,7 +25,7 @@
     "url": "https://github.com/Tencent/tmagic-editor.git"
   },
   "dependencies": {
-    "@tmagic/schema": "1.2.0-beta.19",
+    "@tmagic/schema": "1.2.0-beta.25",
     "dayjs": "^1.11.4"
   },
   "devDependencies": {
