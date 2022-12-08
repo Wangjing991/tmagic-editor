@@ -64,6 +64,7 @@ const getDsl = () => {
     return dsl;
   }
 };
+console.log(componentGroupList, 'componentGroupList');
 // TODO: 取本地localStorage的dsl
 const localDsl = getDsl();
 const value = ref(localDsl);

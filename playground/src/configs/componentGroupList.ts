@@ -1,4 +1,4 @@
-import { FolderOpened, Grid, PictureFilled, SwitchButton, Tickets } from '@element-plus/icons-vue';
+import { FolderOpened, Grid, Picture, PictureFilled, SwitchButton, Tickets } from '@element-plus/icons-vue';
 
 export default [
   {
@@ -30,7 +30,7 @@ export default [
         type: 'button',
       },
       {
-        icon: PictureFilled,
+        icon: Picture,
         text: '图片',
         type: 'img',
       },
@@ -42,7 +42,7 @@ export default [
       {
         icon: PictureFilled,
         text: '空状态',
-        type: 'Empty',
+        type: 'empty',
       },
     ],
   },
