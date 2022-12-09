@@ -21,6 +21,8 @@ import { createApp, defineAsyncComponent } from 'vue';
 import Core from '@tmagic/core';
 import { getUrlParam } from '@tmagic/utils';
 
+import './page-config.js';
+
 import components from '../.tmagic/async-comp-entry';
 import plugins from '../.tmagic/plugin-entry';
 
