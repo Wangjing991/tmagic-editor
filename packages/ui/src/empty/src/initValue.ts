@@ -16,24 +16,10 @@
  * limitations under the License.
  */
 
-import Button from './button';
-import Container from './container';
-import Empty from './empty';
-import Img from './img';
-import Overlay from './overlay';
-import Page from './page';
-import Qrcode from './qrcode';
-import Text from './text';
-
-const ui: Record<string, any> = {
-  page: Page,
-  container: Container,
-  button: Button,
-  text: Text,
-  img: Img,
-  qrcode: Qrcode,
-  overlay: Overlay,
-  empty: Empty,
+export default {
+  description: '暂无数据',
+  style: {
+    width: '100',
+    height: '100',
+  },
 };
-
-export default ui;

@@ -22,7 +22,7 @@ export default defineComponent({
   render() {
     const props = {
       image: this.config.image ? this.config.image : undefined,
-      description: this.config.description ? this.config.description : undefined,
+      description: this.config.description,
     };
     return h(Empty, props);
   },
