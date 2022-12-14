@@ -30,6 +30,7 @@ import request from './utils/request';
 import AppComponent from './App.vue';
 import { getLocalConfig } from './utils';
 
+import 'vant/lib/index.css';
 const magicApp = createApp(AppComponent);
 
 magicApp.use(request);
