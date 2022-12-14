@@ -17,12 +17,10 @@
  */
 
 export default {
-  src: 'https://puui.qpic.cn/vupload/0/1573555382625_bhp0wud8l6w.png/',
-  url: '',
+  actions: '[{"name":"1333"},{"name":"2"},{"name":"3"}]',
+  visible: true,
   style: {
-    position: 'absolute',
-    left: '57',
-    width: '176',
-    height: '176',
+    width: '100vw',
+    height: '50px',
   },
 };

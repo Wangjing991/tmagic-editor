@@ -20,6 +20,8 @@ import { createApp } from 'vue';
 
 import App from './App.vue';
 
+import 'vant/lib/index.css';
+
 Promise.all([import('../.tmagic/comp-entry'), import('../.tmagic/plugin-entry')]).then(([components, plugins]) => {
   const magicApp = createApp(App);
 

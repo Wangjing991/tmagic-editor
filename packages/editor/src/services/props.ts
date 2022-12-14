@@ -73,6 +73,7 @@ class Props extends BaseService {
    * @returns 组件属性表单配置
    */
   public async getPropsConfig(type: string): Promise<FormConfig> {
+    console.log('getPropsConfig====', type);
     if (type === 'area') {
       return await this.getPropsConfig('button');
     }

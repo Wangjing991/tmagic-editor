@@ -2,22 +2,12 @@
 import { defineComponent, h } from 'vue';
 import { Empty } from 'vant';
 
-import 'vant/lib/index.css';
 export default defineComponent({
   props: {
     config: {
       type: Object,
       default: () => ({}),
     },
-    model: {
-      type: Object,
-      default: () => ({}),
-    },
-  },
-  setup(props) {
-    return {
-      configs: props.config,
-    };
   },
   render() {
     const props = {

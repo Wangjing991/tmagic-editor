@@ -19,7 +19,7 @@
 export default {
   description: '暂无数据',
   style: {
-    width: '100',
-    height: '100',
+    width: '100vw',
+    height: '100vh',
   },
 };

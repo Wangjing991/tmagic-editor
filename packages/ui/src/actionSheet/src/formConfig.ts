@@ -16,13 +16,15 @@
  * limitations under the License.
  */
 
-export default {
-  src: 'https://puui.qpic.cn/vupload/0/1573555382625_bhp0wud8l6w.png/',
-  url: '',
-  style: {
-    position: 'absolute',
-    left: '57',
-    width: '176',
-    height: '176',
+export default [
+  {
+    type: 'text',
+    name: 'actions',
+    text: '面板选项列表',
   },
-};
+  {
+    type: 'text',
+    name: 'title',
+    text: '顶部标题',
+  },
+];

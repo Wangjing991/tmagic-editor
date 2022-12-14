@@ -54,6 +54,11 @@ export default [
         text: '列表',
         type: 'list',
       },
+      {
+        icon: PictureFilled,
+        text: '动作面板',
+        type: 'actionsheet',
+      },
     ],
   },
   {

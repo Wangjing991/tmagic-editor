@@ -16,6 +16,7 @@
  * limitations under the License.
  */
 
+import ActionSheet from './actionSheet';
 import Button from './button';
 import Container from './container';
 import Empty from './empty';
@@ -26,6 +27,11 @@ import Page from './page';
 import Qrcode from './qrcode';
 import Test from './test';
 import Text from './text';
+
+/**
+ * ui组件
+ * key: 组件名,不可以用驼峰命名
+ */
 const ui: Record<string, any> = {
   page: Page,
   container: Container,
@@ -37,6 +43,7 @@ const ui: Record<string, any> = {
   empty: Empty,
   test: Test,
   List,
+  actionsheet: ActionSheet,
 };
 
 export default ui;

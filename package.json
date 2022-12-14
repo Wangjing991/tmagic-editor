@@ -93,5 +93,8 @@
   "lint-staged": {
     "*.{js,ts,vue}": "eslint --fix",
     "*.scss": "prettier --write"
+  },
+  "dependencies": {
+    "vant": "^4.0.2"
   }
 }
