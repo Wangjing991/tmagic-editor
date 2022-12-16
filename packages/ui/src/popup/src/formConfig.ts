@@ -16,38 +16,25 @@
  * limitations under the License.
  */
 
-import ActionSheet from './actionSheet';
-import Button from './button';
-import Container from './container';
-import Empty from './empty';
-import Img from './img';
-import List from './list';
-import Overlay from './overlay';
-import Page from './page';
-import Picker from './picker';
-import Popup from './popup';
-import Qrcode from './qrcode';
-import Test from './test';
-import Text from './text';
-
-/**
- * ui组件
- * key: 组件名,不可以用驼峰命名
- */
-const ui: Record<string, any> = {
-  page: Page,
-  container: Container,
-  button: Button,
-  text: Text,
-  img: Img,
-  qrcode: Qrcode,
-  overlay: Overlay,
-  empty: Empty,
-  test: Test,
-  List,
-  actionsheet: ActionSheet,
-  picker: Picker,
-  popup: Popup,
-};
-
-export default ui;
+export default [
+  {
+    name: 'position',
+    text: '弹出位置',
+    type: 'select',
+    options: [
+      { value: 'top', text: 'top' },
+      { value: 'bottom ', text: 'bottom' },
+      { value: 'left', text: 'left' },
+      { value: 'right', text: 'right' },
+    ],
+  },
+  {
+    name: 'overlay',
+    text: '是否显示遮罩层',
+    type: 'select',
+    options: [
+      { value: true, text: '是' },
+      { value: false, text: '否' },
+    ],
+  },
+];

@@ -22,5 +22,9 @@ export default {
   style: {
     width: '100vw',
     height: '50px',
+    left: '0',
+    bottom: '0px',
+    right: '0',
   },
+  position: 'fixed',
 };

@@ -14,6 +14,11 @@ export default [
         text: '蒙层',
         type: 'overlay',
       },
+      {
+        icon: PictureFilled,
+        text: '弹出层',
+        type: 'popup',
+      },
     ],
   },
   {
@@ -58,6 +63,11 @@ export default [
         icon: PictureFilled,
         text: '动作面板',
         type: 'actionsheet',
+      },
+      {
+        icon: PictureFilled,
+        text: '选择器',
+        type: 'picker',
       },
     ],
   },

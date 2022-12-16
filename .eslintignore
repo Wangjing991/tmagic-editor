@@ -12,3 +12,4 @@ value-entry.ts
 
 magic-admin/web/public/runtime
 magic-admin/server/static
+runtime/vue3/libs

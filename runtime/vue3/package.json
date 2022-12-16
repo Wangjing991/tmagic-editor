@@ -4,7 +4,7 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "npm run build:libs  && vite --config dev.vite.config.ts",
+    "dev": "npm run build:libs  && vite --config dev.vite.config.ts | npm run watch:config | npm run watch:value | npm run watch:event",
     "build": "npm run build:libs && npm run build:page && npm run build:playground",
     "build:admin": "npm run build:libs:admin && npm run build:page:admin && npm run build:playground:admin",
     "build:page": "vite build --config build.vite.config.ts --mode page",
@@ -20,8 +20,8 @@
     "build:value:admin": "vite build --config build.vite.config.ts --mode value:admin",
     "build:event:admin": "vite build --config build.vite.config.ts --mode event:admin",
     "watch:event": "vite build --watch --config build.vite.config.ts --mode event",
-    "watch:config": "vite build --watch --config build.vite.config.ts --mode event",
-    "watch:value": "vite build --watch --config build.vite.config.ts --mode event"
+    "watch:config": "vite build --watch --config build.vite.config.ts --mode config",
+    "watch:value": "vite build --watch --config build.vite.config.ts --mode value"
   },
   "dependencies": {
     "@tmagic/cli": "1.2.0-beta.25",

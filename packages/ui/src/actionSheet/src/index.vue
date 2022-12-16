@@ -2,11 +2,12 @@
   <action-sheet :actions="actions" v-model:show="visible" :title="config.title" @select="onSelect" />
 </template>
 <script lang="ts">
-import { defineComponent, ref } from 'vue';
+import { defineComponent, ref, watchEffect } from 'vue';
 import { ActionSheet } from 'vant';
 
 import Core from '@tmagic/core';
 import type { MNode } from '@tmagic/schema';
+import { parseJson } from '@tmagic/utils';
 
 import useApp from '../../useApp';
 
@@ -28,6 +29,7 @@ export default defineComponent({
 
   setup(props) {
     const visible = ref(false);
+    const actions = ref([]);
     const app: Core | undefined = useApp(props);
     const node = app?.page?.getNode(props.config.id);
 
@@ -53,12 +55,10 @@ export default defineComponent({
         closeSheet();
       }
     });
-    let actions = [];
-    try {
-      if (props.config.actions) {
-        actions = JSON.parse(props.config.actions);
-      }
-    } catch (e) {}
+
+    watchEffect(() => {
+      actions.value = props.config.actions ? parseJson(props.config.actions) : [];
+    });
 
     return {
       visible,

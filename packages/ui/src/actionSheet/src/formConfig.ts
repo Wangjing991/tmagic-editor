@@ -18,7 +18,7 @@
 
 export default [
   {
-    type: 'text',
+    type: 'textarea',
     name: 'actions',
     text: '面板选项列表',
   },

@@ -144,3 +144,12 @@ export const isSameDomain = (targetUrl = '', source = globalThis.location.host) 
 
   return getHost(targetUrl) === source;
 };
+
+export const parseJson = (str: string) => {
+  try {
+    return JSON.parse(str);
+  } catch (error) {
+    console.error(error, str);
+    return null;
+  }
+};
