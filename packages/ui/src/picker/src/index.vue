@@ -2,7 +2,7 @@
   <picker :columns="columns" @cancel="handleCancel" @confirm="handleConfirm" :title="config.title" @select="onSelect" />
 </template>
 <script lang="ts">
-import { defineComponent, ref, watchEffect } from 'vue';
+import { computed, defineComponent, ref } from 'vue';
 import { Picker } from 'vant';
 
 import Core from '@tmagic/core';
@@ -51,12 +51,7 @@ export default defineComponent({
       }
     };
 
-    const columns = ref([]);
-
-    watchEffect(() => {
-      console.log(props.config.columns, 'props.config.columns');
-      columns.value = props.config.columns ? parseJson(props.config.columns) : [];
-    });
+    const columns = computed(() => (props.config.columns ? parseJson(props.config.columns) : []));
     return {
       columns,
       handleConfirm,

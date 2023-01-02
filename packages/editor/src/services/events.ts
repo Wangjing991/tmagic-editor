@@ -59,6 +59,7 @@ class Events extends BaseService {
   }
 
   public getEvent(type: string): EventOption[] {
+    console.log('getEvent', type, eventMap[type] || DEFAULT_EVENTS);
     return cloneDeep(eventMap[type] || DEFAULT_EVENTS);
   }
 

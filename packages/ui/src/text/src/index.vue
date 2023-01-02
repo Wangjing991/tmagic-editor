@@ -20,11 +20,17 @@ export default defineComponent({
       type: Object,
       default: () => ({}),
     },
+    payload: {
+      type: Object,
+      default: () => ({}),
+    },
   },
   setup(props) {
     useApp(props);
+
     const vm: MTextInstance = getCurrentInstance()?.proxy as MTextInstance;
     const hoc: MComponentInstance = inject('hoc');
+
     const displayText = computed(() => {
       let text = props.config?.text || '';
       const { vars } = props;

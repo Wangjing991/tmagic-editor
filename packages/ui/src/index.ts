@@ -19,7 +19,9 @@
 import ActionSheet from './actionSheet';
 import Button from './button';
 import Container from './container';
+import Dropdown from './dropdown';
 import Empty from './empty';
+import Form from './form';
 import Img from './img';
 import List from './list';
 import Overlay from './overlay';
@@ -27,6 +29,7 @@ import Page from './page';
 import Picker from './picker';
 import Popup from './popup';
 import Qrcode from './qrcode';
+import Search from './search';
 import Test from './test';
 import Text from './text';
 
@@ -44,10 +47,13 @@ const ui: Record<string, any> = {
   overlay: Overlay,
   empty: Empty,
   test: Test,
-  List,
+  list: List,
   actionsheet: ActionSheet,
   picker: Picker,
   popup: Popup,
+  dropdown: Dropdown,
+  search: Search,
+  form: Form,
 };
 
 export default ui;

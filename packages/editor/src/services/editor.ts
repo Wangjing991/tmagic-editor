@@ -180,6 +180,7 @@ class Editor extends BaseService {
    * 只有容器拥有布局
    */
   public async getLayout(parent: MNode, node?: MNode): Promise<Layout> {
+
     if (node && typeof node !== 'function' && isFixed(node)) return Layout.FIXED;
 
     if (parent.layout) {

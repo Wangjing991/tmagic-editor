@@ -1,7 +1,7 @@
 export default {
   methods: [
     {
-      label: '打开蒙层',
+      label: '打开蒙层33',
       value: 'openOverlay',
     },
     {

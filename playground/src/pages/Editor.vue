@@ -12,6 +12,7 @@
       :default-selected="defaultSelected"
       :moveable-options="moveableOptions"
       :auto-scroll-into-view="true"
+      :can-select="canSelect"
       :stage-rect="stageRect"
     >
       <template #workspace-content>
@@ -198,6 +199,17 @@ editorService.usePlugin({
     return [config, parent];
   },
 });
+
+/**
+ * 判断能否选中的节点
+ * vant 多个节点会有问题
+ * @param node
+ */
+const canSelect = (node: HTMLElement) => {
+  // console.log('node', node.getAttribute('data-type'), Array.from(node.classList).join().includes('magic-ui-component'));
+  if (node.getAttribute('data-type') === 'widget') return true;
+  return false;
+};
 </script>
 
 <style lang="scss">

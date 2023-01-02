@@ -1,15 +1,9 @@
 // event.js
 export default {
-  events: [
-    {
-      label: '改变文字完成了',
-      value: 'change:text',
-    },
-  ],
   methods: [
     {
-      label: '改变文字',
-      value: 'changeText',
+      label: '重新加载数据11',
+      value: 'onLoad',
     },
   ],
 };

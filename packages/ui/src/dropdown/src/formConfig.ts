@@ -18,23 +18,18 @@
 
 export default [
   {
-    name: 'position',
-    text: '弹出位置',
-    type: 'select',
-    options: [
-      { value: 'top', text: 'top3' },
-      { value: 'bottom ', text: 'bottom' },
-      { value: 'left', text: 'left' },
-      { value: 'right', text: 'right' },
-    ],
+    type: 'textarea',
+    name: 'options',
+    text: '面板选项列表',
   },
   {
-    name: 'overlay',
-    text: '是否显示遮罩层',
-    type: 'select',
-    options: [
-      { value: true, text: '是' },
-      { value: false, text: '否' },
-    ],
+    type: 'text',
+    name: 'defaultValue',
+    text: '默认选中value',
+  },
+  {
+    type: 'text',
+    name: 'key',
+    text: '选项的key',
   },
 ];

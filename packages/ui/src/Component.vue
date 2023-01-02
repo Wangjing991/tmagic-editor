@@ -1,11 +1,13 @@
 <template>
   <component
     v-if="display()"
+    data-type="widget"
     :is="tagName"
     :id="config.id"
     :class="`magic-ui-component${config.className ? ` ${config.className}` : ''}`"
     :style="style"
     :config="config"
+    :payload="payload"
   ></component>
 </template>
 
@@ -18,6 +20,10 @@ import { toLine } from '@tmagic/utils';
 export default defineComponent({
   props: {
     config: {
+      type: Object,
+      default: () => ({}),
+    },
+    payload: {
       type: Object,
       default: () => ({}),
     },

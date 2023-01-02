@@ -16,25 +16,10 @@
  * limitations under the License.
  */
 
-export default [
-  {
-    name: 'position',
-    text: '弹出位置',
-    type: 'select',
-    options: [
-      { value: 'top', text: 'top3' },
-      { value: 'bottom ', text: 'bottom' },
-      { value: 'left', text: 'left' },
-      { value: 'right', text: 'right' },
-    ],
-  },
-  {
-    name: 'overlay',
-    text: '是否显示遮罩层',
-    type: 'select',
-    options: [
-      { value: true, text: '是' },
-      { value: false, text: '否' },
-    ],
-  },
-];
+import Container from './src/Container.vue';
+
+export { default as config } from './src/formConfig';
+export { default as value } from './src/initValue';
+export { default as event } from './src/event';
+
+export default Container;

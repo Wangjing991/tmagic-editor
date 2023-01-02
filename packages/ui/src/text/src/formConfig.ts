@@ -19,7 +19,7 @@
 export default [
   {
     name: 'text',
-    text: '文本',
+    text: '文本/key',
   },
   {
     name: 'multiple',

@@ -67,6 +67,7 @@ class Node extends EventEmitter {
 
   private listenLifeSafe() {
     this.once('created', async (instance: any) => {
+      console.log('created', instance);
       this.instance = instance;
       await this.runCodeBlock('created');
     });

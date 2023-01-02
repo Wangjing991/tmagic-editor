@@ -32,7 +32,7 @@ export const fillConfig = (config: FormConfig = []) => [
     items: [
       {
         title: '属性',
-        labelWidth: '80px',
+        labelWidth: '100px',
         items: [
           // 组件类型，必须要有
           {
@@ -106,6 +106,10 @@ export const fillConfig = (config: FormConfig = []) => [
                     name: 'height',
                     text: '高度',
                   },
+                  {
+                    name: 'padding',
+                    text: '内边距',
+                  },
                 ],
               },
               {
@@ -141,6 +145,7 @@ export const fillConfig = (config: FormConfig = []) => [
                   },
                 ],
               },
+
               {
                 type: 'fieldset',
                 legend: '字体',
@@ -157,6 +162,31 @@ export const fillConfig = (config: FormConfig = []) => [
                   {
                     name: 'fontWeight',
                     text: '粗细',
+                  },
+                ],
+              },
+              {
+                type: 'fieldset',
+                legend: '边框',
+                items: [
+                  {
+                    name: 'borderColor',
+                    text: '颜色',
+                  },
+                  {
+                    name: 'borderWidth',
+                    text: '大小',
+                  },
+                  {
+                    name: 'borderStyle',
+                    text: '类型',
+                    type: 'select',
+                    defaultValue: 'solid',
+                    options: [
+                      { text: '实线', value: 'solid' },
+                      { text: '虚线', value: 'dashed' },
+                      { text: '点状边框', value: 'dotted' },
+                    ],
                   },
                 ],
               },

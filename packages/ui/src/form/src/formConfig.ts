@@ -18,23 +18,24 @@
 
 export default [
   {
-    name: 'position',
-    text: '弹出位置',
+    name: 'layout',
+    text: '容器布局',
     type: 'select',
+    defaultValue: 'absolute',
     options: [
-      { value: 'top', text: 'top3' },
-      { value: 'bottom ', text: 'bottom' },
-      { value: 'left', text: 'left' },
-      { value: 'right', text: 'right' },
+      { value: 'absolute', text: '绝对定位' },
+      { value: 'relative', text: '流式布局' },
     ],
-  },
-  {
-    name: 'overlay',
-    text: '是否显示遮罩层',
-    type: 'select',
-    options: [
-      { value: true, text: '是' },
-      { value: false, text: '否' },
-    ],
+    onChange: (formState: any, v: string, { model }: any) => {
+      if (!model.style) return v;
+      if (v === 'relative') {
+        model.style.height = 'auto';
+      } else {
+        const el = formState.stage?.renderer?.contentWindow.document.getElementById(model.id);
+        if (el) {
+          model.style.height = el.getBoundingClientRect().height;
+        }
+      }
+    },
   },
 ];

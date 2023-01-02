@@ -44,6 +44,7 @@ export default defineComponent({
     };
 
     app?.on('editor:select', (info, path) => {
+      console.log('editor:select', info, path);
       if (path.find((node: MNode) => node.id === props.config.id)) {
         openPopup();
       } else {

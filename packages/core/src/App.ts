@@ -221,7 +221,7 @@ class App extends EventEmitter {
     if (isCommonMethod(methodName)) {
       return triggerCommonMethod(methodName, toNode);
     }
-
+  
     if (toNode.instance) {
       if (typeof toNode.instance[methodName] === 'function') {
         toNode.instance[methodName](fromCpt, ...args);

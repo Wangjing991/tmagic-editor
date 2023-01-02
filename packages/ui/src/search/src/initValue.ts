@@ -16,25 +16,15 @@
  * limitations under the License.
  */
 
-export default [
-  {
-    name: 'position',
-    text: '弹出位置',
-    type: 'select',
-    options: [
-      { value: 'top', text: 'top3' },
-      { value: 'bottom ', text: 'bottom' },
-      { value: 'left', text: 'left' },
-      { value: 'right', text: 'right' },
-    ],
+export default {
+  actions: '[{"name":"1333"},{"name":"2"},{"name":"3"}]',
+  visible: true,
+  style: {
+    width: '100vw',
+    height: '50px',
+    left: '0',
+    bottom: '0px',
+    right: '0',
   },
-  {
-    name: 'overlay',
-    text: '是否显示遮罩层',
-    type: 'select',
-    options: [
-      { value: true, text: '是' },
-      { value: false, text: '否' },
-    ],
-  },
-];
+  position: 'fixed',
+};

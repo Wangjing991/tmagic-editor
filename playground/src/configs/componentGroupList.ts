@@ -11,6 +11,11 @@ export default [
       },
       {
         icon: FolderOpened,
+        text: '表单',
+        type: 'form',
+      },
+      {
+        icon: FolderOpened,
         text: '蒙层',
         type: 'overlay',
       },
@@ -49,11 +54,11 @@ export default [
         text: '空状态',
         type: 'empty',
       },
-      {
-        icon: Tickets,
-        text: '测试文本',
-        type: 'test',
-      },
+      // {
+      //   icon: Tickets,
+      //   text: '测试文本',
+      //   type: 'test',
+      // },
       {
         icon: Memo,
         text: '列表',
@@ -68,6 +73,16 @@ export default [
         icon: PictureFilled,
         text: '选择器',
         type: 'picker',
+      },
+      {
+        icon: PictureFilled,
+        text: '下拉菜单',
+        type: 'dropdown',
+      },
+      {
+        icon: PictureFilled,
+        text: '搜索框',
+        type: 'search',
       },
     ],
   },
